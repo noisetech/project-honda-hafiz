@@ -51,9 +51,38 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  margin: 0;
 }
-.accordion-button::after {
-  display: none;
+#carouselExampleControls {
+  width: 100%;
+  /* background: #000; */
+}
+
+#carouselExampleControls {
+  width: 100%;
+  margin: 0;
+}
+
+#carouselExampleControls .carousel-item {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carouselExampleControls .carousel-item img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleControls .carousel-item {
+    height: 300px;
+    margin-top: -80px;
+  }
 }
 
 .tombol-nav-kontak-kami {
@@ -127,11 +156,7 @@ body {
   width: 500px !important;
   height: 500px !important;
 }
-/* 
-.man-and-bot{
-    margin-top: -60px !important;
-    width: 400px;
-} */
+
 
 .sixtyfour {
   font-family: "Sixtyfour", sans-serif;
@@ -218,8 +243,7 @@ body {
 }
 
 #produk {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 10px !important;
 }
 
 .card-custom .judul {
@@ -283,7 +307,7 @@ body {
   margin-left: 0;
   margin-left: 25px;
   border-radius: 10px;
-  width: 200px;
+  width: 100px;
   height: 50px;
   color: #000000;
   text-align: center;
@@ -2004,74 +2028,6 @@ Preloader Style
   color: #ffffff;
 }
 
-/* mobile kecil */
-@media (max-width: 576px) {
-  .banner-area {
-    height: 250px;
-    overflow: hidden;
-  }
-
-  #produk {
-    margin-top: -100px;
-  }
-}
-
-/* tablet */
-/* mobile */
-@media (max-width: 576px) {
-  .banner-area {
-    height: 250px;
-  }
-
-  #produk {
-    margin-top: -100px;
-  }
-}
-
-/* tablet */
-@media (min-width: 577px) and (max-width: 768px) {
-  .banner-area {
-    height: 350px;
-  }
-
-  #produk {
-    margin-top: -120px;
-  }
-}
-
-/* laptop kecil (13 inch biasanya) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .banner-area {
-    height: 450px;
-  }
-
-  #produk {
-    margin-top: -150px;
-  }
-}
-
-/* laptop besar */
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .banner-area {
-    height: 550px;
-  }
-
-  #produk {
-    margin-top: -130px;
-  }
-}
-
-/* desktop */
-@media (min-width: 1367px) {
-  .banner-area {
-    height: 650px;
-  }
-
-  #produk {
-    margin-top: -100px;
-  }
-}
-
 /*
 Banner Style
 ======================================================*/
@@ -2088,15 +2044,16 @@ Banner Style
   margin-left: auto;
 }
 
-.slider-item {
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 60px;
-  overflow: hidden;
+.slider-item.banner-bg-5 {
+  background-image: url(../images/banner/banner-img5.jpg);
+}
+
+.slider-item.banner-bg-6 {
+  background-image: url(../images/gambar-mobil-1.webp);
+}
+
+.slider-item.banner-bg-7 {
+  background-image: url(../images/banner/banner-img7.jpg);
 }
 .slider-item.banner-bg-1 {
   background-image: url(../images/banner/banner-img1.jpg);
@@ -2117,10 +2074,7 @@ Banner Style
   background-image: url(../images/gambar-mobil-1.webp);
 }
 .slider-item.banner-bg-7 {
-  background-image: url(../images/gambar-mobil-2.webp);
-}
-.slider-item.banner-bg-8 {
-  background-image: url(../images/banner/banner-img8.jpg);
+  background-image: url(../images/mobil-brio.png);
 }
 
 .slider-content {
