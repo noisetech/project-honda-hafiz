@@ -17,6 +17,16 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector(".navbar-area");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("is-sticky");
+  } else {
+    navbar.classList.remove("is-sticky");
+  }
+});
+
 document.querySelectorAll(".accordion-button").forEach((btn) => {
   btn.addEventListener("click", function () {
     const icon = this.querySelector(".accordion-icon");
@@ -160,6 +170,40 @@ document.querySelectorAll(".accordion-button").forEach((btn) => {
     margin: 20,
     nav: true,
     dots: false,
+    center: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    smartSpeed: 600,
+    autoplayHoverPause: true,
+    navText: [
+      '<i class="ri-arrow-left-line"></i>',
+      '<i class="ri-arrow-right-line"></i>',
+    ],
+
+    responsive: {
+      0: {
+        items: 1.2,
+        center: true,
+      },
+      576: {
+        items: 1.4,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 2.5,
+      },
+      1200: {
+        items: 3.5,
+      },
+    },
+  });
+  $(".courses-serah-terima").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: true,
     center: true,
     autoplay: false,
     autoplayTimeout: 3000,

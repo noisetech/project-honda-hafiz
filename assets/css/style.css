@@ -53,6 +53,12 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
+#serah-terima {
+  margin-top: 120px;
+  margin-bottom: 150px;
+}
+
 #carouselExampleControls {
   width: 100%;
   /* background: #000; */
@@ -156,7 +162,6 @@ body {
   width: 500px !important;
   height: 500px !important;
 }
-
 
 .sixtyfour {
   font-family: "Sixtyfour", sans-serif;
@@ -278,6 +283,37 @@ body {
   opacity: 0.7;
   z-index: -1;
   border-radius: 25px;
+}
+
+/* card-galery */
+
+.card-galery {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  position: relative;
+  margin: auto;
+}
+
+.card-galery .rating {
+  margin-left: 25px;
+  margin-top: -15px;
+  color: red;
+}
+
+.card-galery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-galery .tulisan {
+  margin-top: -15px;
+  font-size: 14px;
+  padding: 26px;
+  margin-bottom: 0;
 }
 
 /* card produk */
@@ -700,6 +736,7 @@ Top Header Area Style
 /*
 Navbar Area Style
 ======================================================*/
+
 .navbar-area {
   position: relative;
   padding-top: 15px;
