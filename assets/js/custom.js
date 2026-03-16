@@ -205,9 +205,9 @@ document.querySelectorAll(".accordion-button").forEach((btn) => {
     nav: false,
     dots: true,
     center: true,
-    autoplay: false,
-    autoplayTimeout: 3000,
-    smartSpeed: 600,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    smartSpeed: 1000,
     autoplayHoverPause: true,
     navText: [
       '<i class="ri-arrow-left-line"></i>',

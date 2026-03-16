@@ -248,7 +248,7 @@ body {
 }
 
 #produk {
-  margin-top: 10px !important;
+  margin-top: 50px;
 }
 
 .card-custom .judul {
@@ -294,17 +294,25 @@ body {
   margin: auto;
 }
 
+#serah-terima {
+  margin-top: 150px;
+}
+
 /* Mobile */
 @media (max-width: 576px) {
-  #serah-terima{
+  #serah-terima {
     margin-top: 0;
+  }
+
+  #produk {
+    margin-top: -40px;
   }
 }
 
 .card-galery .rating {
   margin-left: 25px;
   margin-top: -15px;
-  color: red;
+  color: #ffde42;
 }
 
 .card-galery img {
